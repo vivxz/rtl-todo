@@ -1,0 +1,28 @@
+{
+  "name": "rtl-todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "repository": "https://github.com/vivxz/rtl-todo.git",
+  "author": "<viviannquan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-loader": "^8.1.0",
+    "firebase": "^7.14.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@testing-library/react": "^10.1.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
