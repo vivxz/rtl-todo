@@ -1,23 +1,27 @@
 import React from 'react';
 import { database } from '../../../config';
 import {GiPig} from 'react-icons/gi'
+import {FiTrash2} from 'react-icons/fi'
 
 export default function TodoItem(props) {
+
   let updateTask = (key) => {
-    database.ref(`/todos/${key}`).update({todo: 'pig'});
+    database.ref(`/todos/${key}`).update({todo: 'cow'});
   }
 
-  // let deleteTask = (key) => {
-  //   database.ref(`/todos/${key}`).remove();
-  // }
+  let deleteTask = (key) => {
+    database.ref(`/todos/${key}`).remove();
+  }
   
   return (
     <div>
       {props.tasks.map((task, index) => {
         return (
           <div>
-            <div onClick={() => {deleteTask(task.key)}} key={index}>{task.todo}
-            <button onClick={() => updateTask(task.key)}  key={index}><GiPig /></button> </div>
+            <div key={index}>
+              <span onClick={() => updateTask(task.key)}>{task.todo}</span>
+              <button onClick={() => deleteTask(task.key)}><FiTrash2 /></button>
+            </div>
           </div>
           )
       })}

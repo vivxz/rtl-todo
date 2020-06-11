@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "jest --config ./jest-config.js --watch"
   },
   "repository": "https://github.com/vivxz/rtl-todo.git",
   "author": "<viviannquan@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
     "firebase": "^7.14.6",
+    "jest": "^26.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0"
@@ -19,6 +22,7 @@
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
+    "@testing-library/jest-dom": "^5.9.0",
     "@testing-library/react": "^10.1.0",
     "nodemon": "^2.0.4",
     "webpack": "^4.43.0",

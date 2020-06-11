@@ -44,7 +44,7 @@ export default function App() {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Add New Todo" onChange={handleChange}></input>
+        <input id="text" type="text" placeholder="Add New Todo" onChange={handleChange}></input>
         <button>Submit</button>
       </form>
 
